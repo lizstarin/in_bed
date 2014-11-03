@@ -24,7 +24,7 @@ def create_tweet():
 	screen_name = '@' + status['user']['screen_name']
 	
 	parsed_text = ' '.join([word for word in text.split() if word[0] != '#' and word[0] != '@' and not re.match('http:\/\/*', word) and not re.match('^RT$', word)])	
-	return ' '.join([screen_name, parsed_text.strip(',.-;"'), 'in bed.'])
+	return ' '.join([screen_name, parsed_text.strip(',.-;"!'), 'in bed.'])
 
 tweet()
 
