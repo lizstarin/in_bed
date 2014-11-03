@@ -2,6 +2,7 @@
 
 # App
 keys.py
+keys.env
 
 # Python
 *.pyc
